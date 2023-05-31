@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
 
 import {Persona} from '../../interface/person.interface';
 
-
 @Component({
   selector: 'app-empleados',
   templateUrl: './empleados.component.html',
@@ -21,6 +20,5 @@ export class EmpleadosComponent {
 
 
   }
-
 
 }
