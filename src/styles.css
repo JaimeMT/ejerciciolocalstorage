@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+/*La parte del CSS DEL foortes*/
+.footer {
+  background-color: #756a6c; /* Color principal de la NBA (rojo) */
+  padding: 20px 0;
+  text-align: center;
+  color: #FFF; /* Color del texto */
+}
+
+.social-icons {
+margin-top: 10px;
+}
+.social-icons a {
+color: #0ed1f3;
+margin: 0 5px;
+font-size: 20px;
+}
