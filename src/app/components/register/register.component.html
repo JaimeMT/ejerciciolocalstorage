@@ -1,1 +1,19 @@
-<p>register works!</p>
+<form (submit)="onSubmit()">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" [(ngModel)]="nombre" required>
+
+  <label for="apellidos">Apellidos:</label>
+  <input type="text" id="apellidos" [(ngModel)]="apellidos" required>
+
+  <label for="telefono">Teléfono:</label>
+  <input type="text" id="telefono" [(ngModel)]="telefono" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" [(ngModel)]="email" required>
+
+  <label for="password">Contraseña:</label>
+  <input type="password" id="password" [(ngModel)]="password" required>
+
+  <button type="submit">Registrarse</button>
+</form>
+
