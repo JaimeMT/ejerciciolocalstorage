@@ -1,6 +1,8 @@
 import { EmpleadoService } from './../../service/empleado.service';
 import { Component } from '@angular/core';
+
 import {Persona} from '../../interface/person.interface';
+
 
 @Component({
   selector: 'app-empleados',
@@ -8,6 +10,7 @@ import {Persona} from '../../interface/person.interface';
   styleUrls: ['./empleados.component.css']
 })
 export class EmpleadosComponent {
+
 
 
   empleados?: Persona[]; // puede ser nulo
@@ -18,5 +21,6 @@ export class EmpleadosComponent {
 
 
   }
+
 
 }
