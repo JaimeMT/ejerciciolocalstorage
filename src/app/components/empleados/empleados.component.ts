@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Persona } from 'src/app/interface/person.interface';
 
 @Component({
   selector: 'app-empleados',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./empleados.component.css']
 })
 export class EmpleadosComponent {
+
+  empleados?: Persona;
+
+  constructor() {};
 
 }
