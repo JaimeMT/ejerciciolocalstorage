@@ -1,9 +1,28 @@
+/*La parte del CSS Del formulario*/
+.my-form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.my-form {
+  margin-top: 60px; /* Ajusta el valor según la separación que desees */
+}
+.my-form .btn {
+  margin-top: 30px;
+}
+
+
 /*La parte del CSS DEL foortes*/
 .footer {
-  background-color: #756a6c; /* Color principal de la NBA (rojo) */
+  background-color: #756a6c;
   padding: 20px 0;
   text-align: center;
-  color: #FFF; /* Color del texto */
+  color: #FFF;
 }
 
 .social-icons {
