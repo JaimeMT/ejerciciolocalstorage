@@ -24,7 +24,9 @@ export class UsuarioService {
 
     if (!localStorage.getItem('usuarios')) {
 
-      usuarios.push(usuarios);
+      console.log(usuario);
+
+      usuarios.push(usuario);
       localStorage.setItem('usuarios', JSON.stringify(usuarios));
 
     }

@@ -1,5 +1,7 @@
 import { FormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
+import { UsuarioService } from 'src/app/service/usuario.service';
+import { Persona } from 'src/app/interface/person.interface';
 
 
 @Component({
@@ -8,28 +10,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-  nombre: string;
-  apellidos: string;
-  telefono: string;
-  email: string;
-  password: string;
 
-  constructor() {
-    this.nombre = '';
-    this.apellidos = '';
-    this.telefono = '';
-    this.email = '';
-    this.password = '';
-  }
+  id?: number;
+  nombre?: string;
+  apellidos?: string;
+  telefono?: string;
+
+  constructor(private usuariosService: UsuarioService) {}
+
   onSubmit(): void {
 
-    const usuario = {
-      nombre: this.nombre,
-      apellidos: this.apellidos,
-      telefono: this.telefono,
-      email: this.email,
-      password: this.password
+    let usuario: Persona = {
+      id: Math.floor((Math.random() * 1000000) + 1),
+      nombre: this.nombre!,
+      apellidos: this.apellidos!,
+      telefono: this.telefono!,
     };
+
+    this.usuariosService.setEmpleado(usuario);
+
   }
 
 }
