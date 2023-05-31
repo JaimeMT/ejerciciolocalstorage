@@ -16,7 +16,7 @@ export class UsuarioService {
 
       usuarios = JSON.parse(localStorage.getItem('usuarios')!);
 
-      usuarios.push(usuarios);
+      usuarios.push(usuario);
 
       localStorage.setItem('usuarios', JSON.stringify(usuarios))
 
@@ -24,16 +24,18 @@ export class UsuarioService {
 
     if (!localStorage.getItem('usuarios')) {
 
-      usuarios.push(usuarios);
+      console.log(usuario);
+
+      usuarios.push(usuario);
       localStorage.setItem('usuarios', JSON.stringify(usuarios));
 
     }
 
   }
 
-  getUsuario(empleadoId: number): Persona {
+  getUsuario(usuarioId: number): Persona {
 
-    return localStorage.getItem('usuarios')![empleadoId] ? JSON.parse(localStorage.getItem('usuarios')!) : null;
+    return localStorage.getItem('usuarios')![usuarioId] ? JSON.parse(localStorage.getItem('usuarios')!) : null;
   }
 
   getUsuarios(): Persona[] {
