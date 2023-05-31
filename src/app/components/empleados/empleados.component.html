@@ -1,1 +1,34 @@
-<p>empleados works!</p>
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <div class="card-header">
+        <button class="btn btn-primary">Añadir Empleado</button>
+      </div>
+      <div class="card-body">
+        <table class="table table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Apellidos</th>
+              <th>Teléfono</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let empleado of empleados">
+                <td>{{empleado.id}}</td>
+                <td>{{empleado.nombre}}</td>
+                <td>{{empleado.apellidos}}</td>
+                <td>{{empleado.telefono}}</td>
+                <td>
+                  <button class="btn btn-warning">Editar</button>
+                  <button class="btn btn-danger">Borrar</button>
+                </td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
